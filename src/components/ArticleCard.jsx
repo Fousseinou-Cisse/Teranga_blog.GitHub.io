@@ -1,9 +1,8 @@
-export default function ArticleCard({ article }) {
+export default function ArticleCard({ title, body }) {
   return (
     <div className="article-card">
-      <h2>{article.title}</h2>
-      <p>{article.excerpt}</p>
-      <button onClick={() => console.log(article.id)}>Read More</button>
+      <h2>{title}</h2>
+      <p>{body}</p>
     </div>
-  );
+  )
 }
